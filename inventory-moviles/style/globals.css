@@ -1,0 +1,194 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    align-items: center;
+}
+
+.nav-list{
+    width: 100%;
+    background-color: #f8f9fa;
+    border-radius: 7px;
+    border: 2px solid #e9ecef;
+    box-shadow: 2px 2px 2px #dee2e6;
+}
+
+.nav-list li {
+    list-style: none;
+}
+
+.card{
+    background-color: #f8f9fa;
+    border-radius: 7px;
+    border: 2px solid #e9ecef;
+    box-shadow: 2px 2px 2px #dee2e6;
+    align-items: center;
+    padding: 20px;
+    margin: 5px;
+    animation-duration: 0.5s;
+    animation-name: card-translote;
+}
+
+@keyframes card-translote {
+    from{
+        transform: translate(30px, 30px);
+    }
+    to{
+        transform: translate(10px, 10px);
+    }
+}
+
+.container-inventory{
+    contain: layout inline-size;
+    width: 85%;
+    justify-items: center;
+    margin: auto;
+}
+
+.grid-inventory{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+.grid-form{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(0,auto)
+}
+
+.text-inventory{
+    background-color: #fdfffc;
+    border-radius: 7px;
+    border: 2px solid #e9ecef;
+    margin: 0;
+    padding: 10px;
+}
+
+.date-inventory{
+    width: 100%;
+    background-color: #fdfffc;
+    border-radius: 7px;
+    border: 2px solid #e9ecef;
+    margin: 0;
+    padding: 10px;
+}
+
+.btn-moviles{
+    width: 15rem;
+    background-color: #4895ef;
+    color: #f8f9fa;
+    border-radius: 7px;
+    border: 1px solid #4361ee;
+    padding: 7px;
+}
+
+.btn-edit{
+    background-color: #0096c7;
+    color: white;
+    border-radius: 5px;
+    padding: 13px;
+}
+
+.btn-product{
+    background-color: #7209b7;
+    color: #ffffff;
+    border-radius: 7px;
+    border: 2px solid #480ca8;
+    box-shadow: 2px 2px 2px #480ca8;
+    padding: 7px;
+}
+
+.btn-login{
+    width: 10rem;
+    background-color: #4895ef;
+    color: #f8f9fa;
+    border-radius: 7px;
+    border: 2px solid #4361ee;
+    box-shadow: 1px 1px 1px #4361ee;
+    padding: 10px;
+}
+
+.btn-register{
+    width: 10rem;
+    background-color: #70e000;
+    color: #0b090a;
+    border-radius: 7px;
+    border: 2px solid #38b000;
+    box-shadow: 1px 1px 1px solid #38b000;
+    padding: 10px;
+}
+
+@media (max-width: 600px){
+    *{
+        padding: 0;
+        margin: 0;
+    }
+
+    .grid-inventory{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .card{
+        width: 100%;
+        margin: 0;
+        padding: 50px;
+        font-size: 20px;
+    }
+
+    .nav-list li{
+        display: none;
+    }
+
+    .position-lottery{
+        margin: auto;
+        padding: 10px;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 600px){
+    .grid-form{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .card{
+        padding: 5px;
+    }
+
+    .text-inventory{
+        width: 100%;
+    }
+    }
+
+    @media (max-width: 700px){
+    .grid-form{
+        display: flex;
+        flex-direction: column;
+    }
+    }
+
+    @media (max-width: 900px){
+    .grid-form{
+        display: flex;
+        flex-direction: column;
+    }
+    }
+
+    @media (max-width: 1080px){
+    .grid-form{
+        display: flex;
+        flex-direction: column;
+    }
+    }
